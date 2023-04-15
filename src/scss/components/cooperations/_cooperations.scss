@@ -1,0 +1,35 @@
+@import "./profits";
+@import "./cooperations-media";
+
+.cooperations {
+  &__container {
+    padding-top: $card-main-gap;
+    padding-bottom: 92px;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $black;
+    font: $regular-hight-font;
+    margin-top: 0;
+    margin-bottom: 36px;
+  }
+
+  &__wrapper {
+    width: 65%;
+  }
+
+  &__small-title {
+    color: $black;
+    font: $regular-preHight-font;
+    margin-top: 0;
+    margin-bottom: $cooperations-small-gap;
+  }
+}
+
+.cooperations-paragraph {
+  font: $regular-cooperations-font;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $grey_shade;
+}

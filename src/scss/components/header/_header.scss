@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+
+  &__container {
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.simplebar-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 11px;
+  padding-top: 31px !important;
+}
+
+.simplebar-content:before {
+  display: none;
+}
+
+.simplebar-track.simplebar-vertical {
+  top: 7px;
+}
+
+.input-effects {
+  outline: none;
+  border: 2px solid $grey_light;
+  background-color: $grey_light;
+  transition: $transitionBack, $transitionBorder;
+
+  &:hover {
+    background-color: $md_grey;
+  }
+
+  &:focus-visible {
+    background-color: $pink_light;
+    border-color: $primary;
+  }
+
+  &:active {
+    background-color: $grey_light;
+    border-color: $grey_light;
+  }
+}
+
+.elephant {
+  display: none;
+}
+
+@import "./choices";
+@import "./header-top";
+@import "./header-middle";
+@import "./header-bottom";
+@import "./dropdown";
+@import "./burger";
+@import "./header-media";

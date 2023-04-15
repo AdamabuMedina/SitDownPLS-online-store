@@ -1,0 +1,126 @@
+.header-bottom {
+  padding-bottom: 32px;
+
+  &__form {
+    position: relative;
+    width: 761px;
+    height: 60px;
+  }
+
+  &__search-input {
+    width: 100%;
+    height: 100%;
+    padding: 21px 60px 18px 57px;
+    border-radius: 10px 0px 0px 10px;
+    font: $regular-preMedium-font;
+
+    &:active {
+      + svg path {
+        transition: $transitionFill;
+        fill: $primary;
+      }
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__search-button {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__dropdown-wrapper {
+    position: relative;
+    width: 300px;
+    margin-right: auto;
+  }
+
+  &__dropdown-button {
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    background: $white;
+    padding: 17px 32px 17px 32px;
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid $grey_light;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      border-color: $primary;
+    }
+
+    &:focus-visible {
+      border-color: $primary;
+      background-color: $pink_light;
+    }
+
+    &:active {
+      border-color: $primary_shade;
+    }
+
+    &.active::after {
+      transform: translateY(44%) rotate(-135deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 42%;
+      transform: translateY(-50%);
+      right: 32px;
+      width: 8px;
+      height: 8px;
+      z-index: 2;
+      border: solid;
+      border-color: $primary;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg);
+      transition: $transitionColor, $transitionTransform;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user {
+    margin-right: 24px;
+    padding: 3px 4px;
+    transition: $transitionBack;
+    outline: none;
+  }
+
+  &__shopping {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 1px 3px 4px;
+    outline: none;
+    transition: $transitionBack;
+
+    &-count {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 3px;
+      margin-right: -4px;
+      border-radius: 50%;
+      width: 14px;
+      height: 15px;
+      background-color: $secondary;
+      color: $white;
+      font: $bold-lightUltra-font;
+    }
+  }
+}

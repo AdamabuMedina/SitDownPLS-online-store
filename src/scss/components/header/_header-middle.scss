@@ -1,0 +1,30 @@
+.header-middle {
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &__nav {
+    @include flex-all-center;
+    max-width: 1000px;
+  }
+
+  &__nav-list {
+    @include flex-all-center;
+    flex-wrap: wrap;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 92px;
+    }
+  }
+
+  &__nav-link {
+    color: $black;
+    font: $regular-medium-font;
+    outline: none;
+    white-space: nowrap;
+    transition: $transitionBack, $transitionColor;
+  }
+}

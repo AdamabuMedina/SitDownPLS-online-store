@@ -1,0 +1,89 @@
+.header-top {
+  background-color: $grey_light;
+
+  &__mobile {
+    display: none;
+  }
+
+  &__region {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 180px;
+    margin-right: 28px;
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &-text {
+      margin-right: 3px;
+      font: $regular-preMedium-font;
+    }
+  }
+
+  &__call {
+    @include flex-v-center;
+    align-self: center;
+    margin-right: auto;
+    outline: none;
+
+    > svg > path {
+      transition: $transitionFill;
+    }
+
+    &:focus-visible {
+      background-color: $bone;
+    }
+
+    &:hover {
+      > svg > path {
+        fill: $secondary_light;
+      }
+
+      > .header-top__call-number {
+        color: $secondary_light;
+        font: $regular-light-font;
+      }
+    }
+
+    &:active {
+      > svg > path {
+        fill: $secondary_shade;
+      }
+
+      > .header-top__call-number {
+        color: $secondary_shade;
+      }
+    }
+  }
+
+  &__call-number {
+    font: $regular-light-font;
+    color: $secondary;
+    transition: $transitionColor;
+  }
+
+  &__nav {
+    @include flex-v-center;
+    max-width: 750px;
+
+    &-list {
+      @include flex-v-center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 64px;
+    }
+  }
+
+  &__nav-link {
+    font: $regular-light-font;
+    color: $grey;
+    outline: none;
+    transition: $transitionBack, $transitionColor;
+  }
+}

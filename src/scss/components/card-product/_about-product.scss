@@ -1,0 +1,127 @@
+.about-product {
+  margin: 0;
+  padding-bottom: 82px;
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $black;
+    position: relative;
+    font: $regular-product-card-text-font;
+  }
+
+  &__description_first {
+    margin-bottom: 7px;
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $card-main-gap;
+    margin-bottom: $card-main-gap;
+  }
+
+  &__top-right {
+    padding-top: 16px;
+    grid-column: 2/3;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $card-main-gap;
+  }
+
+  &__bottom-left {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 247px;
+      height: 113px;
+      background-image: url("../img/card-product/sofa-special.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 247px;
+      height: 113px;
+      background-image: url("../img/card-product/card-product-back.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      right: 98px;
+    }
+  }
+
+  &__characteristics-list {
+    width: 544px;
+  }
+
+  &__right {
+    padding-top: 17px;
+  }
+
+  &__left {
+    margin-right: $card-main-gap;
+  }
+
+  &__raiting {
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font: $regular-preHight-font;
+    color: $black;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &__title-descr {
+    font: $regular-light-font;
+    color: $grey;
+    margin-top: 0;
+    margin-bottom: 19px;
+  }
+
+  &__price {
+    font: $regular-product-price-font;
+    color: $black;
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+
+  &__bue-btn {
+    padding: 17px 30px;
+  }
+
+  &__add-btn {
+    font: $regular-medium-font;
+    padding: 5px 32px;
+    position: relative;
+    top: 8px;
+    color: $primary;
+  }
+}
+
+.about-product-section__descr-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: $black;
+  font: $preBold-font;
+}
+
+.about-product {
+  &__characteristics-item {
+    display: grid;
+    grid-template-columns: max-content 1fr minmax(220px, auto);
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
+}

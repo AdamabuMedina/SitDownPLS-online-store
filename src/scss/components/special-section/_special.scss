@@ -1,0 +1,46 @@
+.special {
+  &__container {
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    padding-top: $main-offset;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+  }
+
+  &__card {
+    grid-template-rows: 1fr auto auto auto;
+    height: 511px;
+
+    picture {
+      align-self: end;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__swiper-buttons {
+    position: absolute;
+    right: 3px;
+    top: 92px;
+    width: 119px;
+  }
+
+  &__button {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+
+    &-rotate {
+      > svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@import "./card";
+@import "./special-slide";
+@import "./special-media";

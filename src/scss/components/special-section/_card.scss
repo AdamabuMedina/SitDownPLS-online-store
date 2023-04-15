@@ -1,0 +1,80 @@
+.card__new-price {
+  margin-right: $card-gap;
+  color: $secondary;
+  font: $regular-hightMedium-font;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  overflow: hidden;
+  background-color: $grey_light;
+  border-radius: 10px;
+  box-sizing: border-box;
+  align-items: end;
+  padding: $card-gap;
+  transition: $transitionBoxShadow;
+
+  &__marker {
+    position: absolute;
+    letter-spacing: 0;
+    top: $card-gap;
+  }
+
+  picture {
+    justify-self: center;
+    margin-left: -$card-gap;
+    margin-right: -$card-gap;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 14px 8px rgba(34, 60, 80, 0.08);
+    -moz-box-shadow: 0px 0px 14px 8px rgba(34, 60, 80, 0.08);
+    box-shadow: 0px 0px 14px 8px rgba(34, 60, 80, 0.08);
+  }
+
+  &-title {
+    font: $regular-preHight-font;
+    color: $black;
+    overflow: hidden;
+  }
+
+  &__image {
+    align-self: center;
+    object-fit: contain;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: $card-row-gap;
+
+    &-model {
+      white-space: nowrap;
+    }
+
+    &_big {
+      max-width: 45%;
+    }
+  }
+
+  &__price {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: $card-row-gap;
+    align-self: end;
+    overflow: hidden;
+  }
+
+  &__old-price {
+    color: $grey;
+    font: $regular-medium-font;
+  }
+
+  &__button {
+    align-self: end;
+    justify-self: start;
+    padding: 17px 33px;
+  }
+}

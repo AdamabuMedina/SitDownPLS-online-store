@@ -1,0 +1,28 @@
+<section class="catalog">
+  <h1 class="visually-hidden">Каталог</h1>
+  <div class="container links-container">
+    <ul class="catalog__links-list list-reset">
+      <li class="catalog__links-item">
+        <a class="catalog__link" href="index.html">Главная /</a>
+      </li>
+      <li class="catalog__links-item">
+        <a class="catalog__link" href="#">Каталог /</a>
+      </li>
+      <li class="catalog__links-item">
+        <a class="catalog__link" href="#">Диваны /</a>
+      </li>
+      <li class="catalog__links-item">
+        <a class="catalog__link catalog__link_active" href="#">Прямые диваны</a>
+      </li>
+    </ul>
+  </div>
+  <div class="catalog__container container">
+    <div class="some-content">
+      <h2 class="catalog__title title">Каталог</h2>
+    </div>
+    <!-- catalog-sidebar -->
+    @include('catalog-sidebar.html')
+    <!-- catalog-slider -->
+    @include('catalog-slider.html')
+  </div>
+</section>

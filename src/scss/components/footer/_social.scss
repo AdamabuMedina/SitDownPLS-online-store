@@ -1,0 +1,17 @@
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  transition: $transitionBack;
+  outline: none;
+}
+
+.social-fb-link {
+  margin-right: 9px;
+}
+
+.social-vk-link {
+  margin-right: 11px;
+}

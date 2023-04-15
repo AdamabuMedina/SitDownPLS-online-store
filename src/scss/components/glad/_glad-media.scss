@@ -1,0 +1,87 @@
+@media (max-width: 1024px) {
+  .glad__left {
+    max-width: calc(44% - 16px);
+
+    &::after {
+      content: "";
+      width: calc(55% - 12px);
+      background-position: 0 147px;
+      background-image: url("../img/glad/glad-right_1024.webp");
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .glad__left {
+    max-width: calc(67% - 16px);
+
+    &::after {
+      content: "";
+      right: 72px;
+      width: calc(27% - 20px);
+      background-size: contain;
+      background-position: 0 83px;
+      background-image: url("../img/glad/glad-right_768.webp");
+    }
+  }
+
+  .glad {
+    &__container {
+      padding-bottom: 69px;
+    }
+
+    &__input {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .glad__left::after {
+    background-size: contain;
+    width: calc(30% - 10px);
+    right: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .glad__left {
+    max-width: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .glad {
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__container {
+      padding-top: 69px;
+    }
+
+    &__button {
+      margin-bottom: 12px;
+    }
+
+    &__text-content {
+      margin-bottom: 13px;
+    }
+
+    &__form-label {
+      font: 400 12px/16px "Open-Sans", Arial;
+    }
+  }
+
+  .check {
+    padding-left: 21px;
+  }
+
+  .check__box {
+    margin-left: -21px;
+  }
+}

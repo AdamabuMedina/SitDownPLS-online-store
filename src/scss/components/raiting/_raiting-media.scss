@@ -1,0 +1,84 @@
+@media (max-width: 1024px) {
+  .raiting {
+    &__container {
+      padding-bottom: 69px;
+    }
+
+    &__cards-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .raiting {
+    &__cards-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .raiting {
+    &__container {
+      padding-bottom: 68px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .raiting {
+    &__container {
+      padding-top: 68px;
+    }
+
+    &__more-button {
+      width: 100%;
+      padding: 21px 14px;
+    }
+
+    &__cards-list {
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    &__star {
+      width: 14.9px;
+      height: 12.4px;
+    }
+  }
+
+  .raiting-card {
+    padding: 16px;
+    min-height: 278px;
+
+    &__grade {
+      font: 400 12px/16px "Open-Sans", Arial;
+    }
+
+    &__name {
+      margin-bottom: 12px;
+      font: 400 16px/22px "Open-Sans", Arial;
+    }
+
+    &__price {
+      margin-bottom: 16px;
+    }
+
+    &__button {
+      padding: 10px 23px;
+    }
+
+    picture {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 108px;
+      margin-bottom: 0;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@media (max-width: 1024px) {
+  .cooperations {
+    &__wrapper {
+      width: 88%;
+    }
+
+    &__title {
+      margin-bottom: 34px;
+    }
+  }
+
+  .profits {
+    width: 74%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cooperations__wrapper {
+    width: 100%;
+  }
+
+  .suppliers {
+    margin-bottom: 34px;
+  }
+
+  .profits {
+    margin-bottom: 34px;
+    width: 100%;
+  }
+
+  .warranty-list {
+    margin-bottom: 26px;
+  }
+
+  .warranty__note {
+    max-width: 100%;
+  }
+
+  .advantage__subtitle {
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cooperations {
+    &__container {
+      padding-top: 0;
+      padding-bottom: 69px;
+    }
+
+    &__title {
+      font: 400 24px/24px "Open-Sans", Arial;
+    }
+
+    &__small-title {
+      font: 400 15px/22px "Open-Sans", Arial !important;
+    }
+  }
+
+  .cooperations-paragraph {
+    font: 400 14px/25px "Open-Sans", Arial;
+  }
+
+  .suppliers {
+    margin-bottom: 33px;
+  }
+
+  .warranty-list {
+    margin-bottom: 32px;
+  }
+
+  .profits__paragraph {
+    font: 400 14px/21px "Open-Sans", Arial;
+  }
+
+  .warranty__note {
+    padding-left: 52px;
+    font: 400 16px/24px "Open-Sans", Arial;
+
+    &::before {
+      top: 0px;
+      width: 36px;
+      height: 54px;
+    }
+  }
+
+  .advantage__paragraph_first {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .warranty__note::before {
+    top: 8px;
+  }
+
+  .cooperations {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__wrapper {
+      padding-top: 4px;
+    }
+  }
+
+  .profits {
+    margin-bottom: 29px;
+  }
+
+  .advantage__title {
+    margin-bottom: 12px;
+  }
+}

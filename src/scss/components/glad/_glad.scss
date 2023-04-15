@@ -1,0 +1,66 @@
+@import "./tooltip";
+@import "./checkbox";
+@import "./glad-media";
+
+.glad {
+  &__container {
+    position: relative;
+    padding-top: $main-offset;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__left {
+    max-width: calc(50% - 16px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: calc(50% - 16px);
+      height: 100%;
+      background-image: url("../img/glad/glad-right.webp");
+      background-position: 0 95px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 7px 16px;
+    color: $black;
+    font: $regular-glad-input-font;
+    margin-bottom: 26px;
+  }
+
+  &__text-content {
+    font: $regular-glad-content-font;
+    color: $grey_shade;
+    margin-bottom: 11px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__form-label {
+    display: inline-flex;
+    align-items: center;
+    font: $regular-glad-content-font;
+  }
+
+  &__button {
+    font: $preBold-font !important;
+    padding: 17px 33px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "./sidebar";
+@import "./swiper";
+@import "./catalog-media";
+
+.catalog {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr;
+    column-gap: $card-main-gap;
+    grid-auto-flow: column;
+    padding-top: $card-main-gap;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-right: 20px;
+    font: $regular-preHight-font;
+  }
+
+  &__sidebar {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  &__swiper-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &__links-list {
+    display: flex;
+  }
+
+  &__link {
+    color: $grey;
+    font: $regular-light-font;
+    margin-right: 6px;
+
+    &_active {
+      color: $primary_shade;
+    }
+  }
+}

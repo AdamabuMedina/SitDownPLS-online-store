@@ -1,0 +1,112 @@
+.choices[data-type*="select-one"] .choices__inner {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  min-height: 20px;
+}
+
+.choices.is-open > .choices__inner .choices__item--selectable::after {
+  top: 0px;
+  transform: rotate(-135deg);
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.choices__inner .choices__item--selectable::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  width: 6px;
+  height: 6px;
+  z-index: 2;
+  left: 8px;
+  top: -2px;
+  border: solid;
+  border-color: $primary;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  transition: $transitionBorder, $transitionTransform;
+}
+
+.dropdown-wrapper .choices__item--selectable::after {
+  left: 5px;
+  top: 1px;
+}
+
+.choices[data-type*="select-one"]:after {
+  display: none;
+}
+
+.choices__inner {
+  background-color: transparent;
+  border: none;
+  transition: $transitionBack;
+}
+
+.choices__item {
+  white-space: nowrap;
+  padding-right: 10px;
+  padding-left: 2px;
+  color: $black;
+  font: $regular-preMedium-font;
+}
+
+.choices {
+  @include flex-all-center;
+  max-height: 22px;
+}
+
+.choices:focus-visible .choices__inner {
+  background: $pink_violet;
+}
+
+.choices.is-open .choices__inner {
+  background: $grey_light;
+}
+
+.choices:focus-visible .choices__inner .choices__item--selectable {
+  color: $primary_shade;
+}
+
+.choices:focus {
+  background-color: $pink_violet;
+}
+
+.choices:focus-visible .choices__inner .choices__item--selectable::after {
+  border-color: $primary_shade;
+}
+
+.choices__item--selectable {
+  position: relative;
+  transition: $transitionTransform;
+}
+
+.choices__inner .choices__item--selectable {
+  color: $primary;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+  padding: 5px !important;
+}
+
+.choices__list--dropdown {
+  // border: 2px solid #f7f7f7;
+  min-width: 100px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.choices__list--dropdown.is-active .choices__list .choices__item:hover {
+  background-color: $pink_violet;
+}
+
+.is-highlighted {
+  background-color: $pink_violet !important;
+}

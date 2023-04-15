@@ -1,0 +1,248 @@
+@media (max-width: 1024px) {
+  .top-categories {
+    &__models {
+      margin-bottom: 16px;
+    }
+
+    &__card {
+      height: 511px;
+      background-size: auto 296px;
+      background-position: 0 126px;
+    }
+
+    &__item_sofas {
+      -ms-flex-preferred-size: calc(67% - 14px);
+      flex-basis: calc(67% - 14px);
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+
+    &__item_armchairs {
+      -ms-flex-preferred-size: calc(33.333% - 22px);
+      flex-basis: calc(33.333% - 22px);
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3;
+    }
+
+    &__item_beds {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+    &__item_pedestals {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+    }
+
+    &__item_chairs {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4;
+    }
+  }
+
+  .sofas-card {
+    background-image: url("../img/top-categories/tops-sofas_1024.webp");
+    background-size: 515px 308px;
+    background-position: 0 120px;
+  }
+
+  .armchairs-card {
+    background-image: url("../img/top-categories/tops-armchairs_1024.webp");
+  }
+
+  .beds-card {
+    background-image: url("../img/top-categories/tops-beds_1024.webp");
+  }
+
+  .pedestals-card {
+    background-image: url("../img/top-categories/tops-pedestals_1024.webp");
+  }
+
+  .chairs-card {
+    background-image: url("../img/top-categories/tops-chairs_1024.webp");
+  }
+}
+
+@media (max-width: 768px) {
+  .top-categories {
+    &__item {
+      -ms-flex-preferred-size: calc(50% - 16px);
+      flex-basis: calc(50% - 16px);
+    }
+
+    &__item_armchairs {
+      -ms-flex-preferred-size: calc(50% - 16px);
+      flex-basis: calc(50% - 16px);
+    }
+
+    &__item_sofas {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+
+    &__item_sofas {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+
+    &__item_beds {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+
+    &__item_armchairs {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+    }
+
+    &__item_pedestals {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3;
+    }
+
+    &__item_chairs {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .top-categories {
+    &__container {
+      padding-top: 71px;
+    }
+
+    &__item {
+      -ms-flex-preferred-size: calc(50% - 8px);
+      flex-basis: calc(50% - 8px);
+
+      &_sofas {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+      }
+    }
+
+    &__name {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      pointer-events: auto;
+      cursor: pointer;
+      min-height: 22px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-grid-column-align: start;
+      justify-self: start;
+      font: 400 16px/26px "Open-Sans", Arial;
+    }
+
+    &__name > svg {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: static;
+    }
+
+    &__name-arrow {
+      display: inline-block;
+    }
+
+    &__list {
+      -webkit-column-gap: 16px;
+      -moz-column-gap: 16px;
+      column-gap: 16px;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__model-name {
+      font: 400 10px/10px "Open-Sans", Arial;
+    }
+
+    &__models {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 10px;
+      -webkit-column-gap: 20px;
+      -moz-column-gap: 20px;
+      column-gap: 20px;
+
+      &_big {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-bottom: 17px;
+      }
+    }
+
+    &__card {
+      height: 206px;
+      background-size: contain;
+      background-position: 0 16px;
+      padding: 16px;
+
+      &_sofas {
+        background-image: url("../img/top-categories/tops-sofas_320.webp") !important;
+        background-size: contain;
+        background-position: 0 calc(100% - 16px);
+        height: 332px;
+        padding: 30px;
+      }
+    }
+  }
+
+  .top-categories__card_sofas > .top-categories__links {
+    margin-bottom: 16px;
+  }
+
+  .top-categories__item:not(:first-child) .top-categories__name {
+    font: 400 16px/17px "Open-Sans", Arial;
+  }
+
+  .top-categories__models_big + .top-categories__name > svg {
+    bottom: 3px;
+  }
+
+  .top-categories__models_big > .top-categories__model-name {
+    font: 400 14px/14px "Open-Sans", Arial;
+  }
+
+  .top-categories__card_sofas > .top-categories__name {
+    font: 400 24px/31px "Open-Sans", Arial;
+  }
+
+  .armchairs-card {
+    background-image: url("../img/top-categories/tops-armchairs_320.webp");
+    background-position: 0 calc(100% - 16px);
+  }
+
+  .beds-card {
+    background-image: url("../img/top-categories/tops-beds_320.webp");
+    background-position: 0 calc(100% - 16px);
+  }
+
+  .pedestals-card {
+    background-image: url("../img/top-categories/tops-pedestals_320.webp");
+    background-position: 0 calc(100% - 16px);
+  }
+
+  .chairs-card {
+    background-image: url("../img/top-categories/tops-chairs_320.webp");
+    background-position: 0 calc(100% - 16px);
+  }
+}
